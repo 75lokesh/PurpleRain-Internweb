@@ -1,0 +1,50 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  margin-left: 230px;
+}
+
+.headerTitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchInput {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 180px;
+  transition: border-color 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.notifButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+}
+
+.notifButton:hover,
+.notifButton:focus {
+  color: #0066cc;
+  outline: none;
+}

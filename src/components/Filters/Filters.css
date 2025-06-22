@@ -1,0 +1,41 @@
+.filtersContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filterDropdown {
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  min-width: 150px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filterDropdown:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.addInternBtn {
+  background: #0077cc;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.addInternBtn:hover,
+.addInternBtn:focus {
+  background-color: #005fa3;
+  outline: none;
+}

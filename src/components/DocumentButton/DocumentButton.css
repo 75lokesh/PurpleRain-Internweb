@@ -1,0 +1,50 @@
+.documentButton {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.87rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+  min-width: 110px;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.documentButton:hover,
+.documentButton:focus {
+  background-color: #e6f2ff;
+  border-color: #0077cc;
+  color: #0077cc;
+  outline: none;
+}
+
+.documentButton.uploaded {
+  background-color: #00a859;
+  border-color: #00a859;
+  color: white;
+  cursor: default;
+}
+
+.docIcon {
+  font-size: 1.1rem;
+}
+
+/* Smaller on mobile */
+@media (max-width: 480px) {
+  .documentButton {
+    min-width: 90px;
+    font-size: 0.8rem;
+  }
+  .docIcon {
+    font-size: 1rem;
+  }
+}

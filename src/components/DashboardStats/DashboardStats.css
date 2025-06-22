@@ -1,0 +1,50 @@
+.dashboardStatsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.statBox {
+  flex: 1 1 22%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 140px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.statBox:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.statIcon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.statValue {
+  font-weight: 700;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  color: #222;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive wrap */
+@media (max-width: 600px) {
+  .statBox {
+    flex: 1 1 45%;
+    margin-bottom: 0.75rem;
+  }
+}
